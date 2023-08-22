@@ -78,7 +78,7 @@ public abstract class FieldMapper extends Mapper implements Cloneable {
     protected final MultiFields multiFields;
     protected final CopyTo copyTo;
     protected final boolean hasScript;
-    protected final OnScriptError onScriptError;
+    public final OnScriptError onScriptError;
 
     /**
      * @param simpleName        the leaf name of the mapper

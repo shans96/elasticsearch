@@ -1724,7 +1724,7 @@ public class NumberFieldMapper extends FieldMapper {
         this.indexMode = builder.indexMode;
     }
 
-    boolean coerce() {
+    public boolean coerce() {
         return coerce.value();
     }
 
@@ -1858,7 +1858,7 @@ public class NumberFieldMapper extends FieldMapper {
     }
 
     // For testing only:
-    void setAllowMultipleValues(boolean allowMultipleValues) {
+    public void setAllowMultipleValues(boolean allowMultipleValues) {
         this.allowMultipleValues = allowMultipleValues;
     }
 }
