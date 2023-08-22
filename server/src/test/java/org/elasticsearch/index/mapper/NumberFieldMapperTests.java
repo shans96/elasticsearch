@@ -336,12 +336,12 @@ public abstract class NumberFieldMapperTests extends MapperTestCase {
             }
 
             @Override
-            ScriptFactory emptyFieldScript() {
+            protected ScriptFactory emptyFieldScript() {
                 return null;
             }
 
             @Override
-            ScriptFactory nonEmptyFieldScript() {
+            protected ScriptFactory nonEmptyFieldScript() {
                 return null;
             }
         };
